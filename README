@@ -1,0 +1,108 @@
+Contact Management System
+
+A Contact Management System developed in C++ using a Binary Search Tree (BST) to efficiently organize and manage contact information.
+
+Overview
+
+This project was developed to apply fundamental Data Structures and Algorithms concepts to a practical application. Contacts are organized in the Binary Search Tree based on the contact name, allowing alphabetical traversal and efficient name-based searching.
+
+The system provides essential functionality for adding, searching, editing, deleting, and managing contacts.
+
+Features
+Add new contacts
+Search contacts by name
+Search contacts by phone number
+Edit existing contact details
+Delete contacts
+Mark or unmark contacts as favourites
+Display all contacts alphabetically
+Display favourite contacts
+Prevent duplicate phone numbers
+Validate Gmail addresses
+Load contacts from a file
+Save contacts to a file
+Contact Information
+
+Each contact contains:
+
+Name
+Phone Number
+Email
+Address
+Favourite Status
+Data Structure Used
+Binary Search Tree
+
+The system uses a Binary Search Tree, with the contact's name serving as the key.
+
+              Rahul
+             /     \
+        Arjun       Vijay
+        /   \         \
+     Anand  Ravi      Zoya
+
+Contacts are arranged according to alphabetical order.
+
+An inorder traversal of the BST produces contacts in alphabetical order.
+
+Operations
+Insertion
+
+New contacts are inserted according to their names while maintaining the BST property.
+
+Searching
+Name-based searching utilizes the BST structure.
+Phone-number searching traverses the tree because the BST is ordered by name.
+Deletion
+
+The system handles all three standard BST deletion cases:
+
+Node with no children
+Node with one child
+Node with two children
+File Handling
+
+Contact information is stored in contacts.txt, allowing the data to be loaded when the program starts and saved when the program exits.
+
+Concepts Applied
+Binary Search Trees
+Recursion
+Tree Traversal
+Searching Algorithms
+Insertion and Deletion
+Pointers
+Structures
+Dynamic Memory Allocation
+File Handling
+Exception Handling
+Input Validation
+Technologies Used
+Language: C++
+Data Structure: Binary Search Tree
+File Storage: Text File (contacts.txt)
+Compiler: Any standard C++ compiler
+How to Run
+1. Clone the Repository
+git clone <your-repository-url>
+2. Navigate to the Project Directory
+cd Contact-Management-System
+3. Compile the Program
+g++ main.cpp -o contact_manager
+4. Run the Program
+./contact_manager
+Project Structure
+Contact-Management-System/
+│
+├── main.cpp
+├── contacts.txt
+└── README.md
+Future Enhancements
+
+Possible improvements for future versions include:
+
+Sorting and searching by multiple fields
+More advanced input validation
+Improved user interface
+Persistent favourite status
+Contact groups and categories
+More efficient phone-number indexing
